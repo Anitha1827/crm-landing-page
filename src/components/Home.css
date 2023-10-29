@@ -1,0 +1,514 @@
+h1 {
+  font-size: 75px;
+  font-family: "Gambetta", serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: black;
+  outline: none;
+  text-align: center;
+}
+
+h1:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+
+/* button */
+/* Card */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card1 {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 10px;
+  position: relative;
+  transition: transform 0.3s, z-index 0.3s;
+  transform: rotate(10deg);
+}
+.card2 {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 10px;
+  position: relative;
+  transition: transform 0.3s, z-index 0.3s;
+  transform: rotate(0deg);
+}
+.card3 {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 10px;
+  position: relative;
+  transition: transform 0.3s, z-index 0.3s;
+  transform: rotate(-0.02turn);
+}
+.card1:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.card2:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.card3:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.mobiled {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
+.mobilediv {
+  background-color: #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .card1 {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 10px;
+    position: relative;
+    top: 110%;
+    transition: transform 0.3s, z-index 0.3s;
+    transform: rotate(10deg);
+  }
+  .card2 {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 10px;
+    position: relative;
+    transition: transform 0.3s, z-index 0.3s;
+    transform: rotate(-20deg);
+  }
+  .card3 {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 10px;
+    position: relative;
+    bottom: 90%;
+    transition: transform 0.3s, z-index 0.3s;
+    transform: rotate(30deg);
+  }
+  .card1:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .card2:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .card3:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .mobiled {
+    margin-top: 15%;
+    font-size: 2.5rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .mobileimg {
+    width: 100%;
+  }
+  .mobilediv {
+    background-color: #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .getstartedbutton {
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #3ccf4e;
+    color: #3ccf4e;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    top: 35%;
+    overflow: hidden;
+    transition: color 0.3s, background 0.3s;
+  }
+
+  .getstartedbutton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3ccf4e;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+
+  .getstartedbutton:hover {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 10%;
+  }
+
+  .getstartedbutton:hover::before {
+    transform: scaleX(1);
+  }
+  .zoomimage {
+    padding: 50px;
+    transition: transform 0.2s; /* Animation */
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .zoomimage:hover {
+    transform: scale(1.5);
+  }
+
+  .get-started-button {
+    margin-left: 60%;
+    display: inline-block;
+    padding: 10px 28px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #3ccf4e;
+    color: #3ccf4e;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    right: 215px;
+    overflow: hidden;
+    transition: color 0.3s, background 0.3s;
+  }
+
+  .get-started-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3ccf4e;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+
+  .get-started-button:hover {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .get-started-button:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+/* image */
+.zoom {
+  padding: 50px;
+  transition: transform 0.2s; /* Animation */
+  width: 450px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+  width: 450px;
+  height: 350px;
+}
+
+.zoomimage {
+  padding: 50px;
+  transition: transform 0.2s; /* Animation */
+
+  margin: 0 auto;
+}
+
+.zoomimage:hover {
+  transform: scale(1.5);
+}
+
+.custom-div {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.customdiv {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.customdivlogo {
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.customdivprice {
+  background-color: #0000;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: start;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: #ffff;
+  width: 55%;
+}
+.get-started-button {
+  display: inline-block;
+  padding: 10px 28px;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid #3ccf4e;
+  color: #3ccf4e;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  right: 215px;
+  overflow: hidden;
+  transition: color 0.3s, background 0.3s;
+}
+
+.get-started-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3ccf4e;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+.get-started-button:hover {
+  color: #fff;
+  font-weight: 600;
+}
+
+.get-started-button:hover::before {
+  transform: scaleX(1);
+}
+
+.getstartedbutton {
+  display: inline-block;
+  padding: 10px 28px;
+  font-size: 20px;
+  background: transparent;
+  border: 2px solid #3ccf4e;
+  color: #3ccf4e;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  top: 35%;
+  overflow: hidden;
+  transition: color 0.3s, background 0.3s;
+}
+
+.getstartedbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3ccf4e;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+.getstartedbutton:hover {
+  color: #fff;
+  font-weight: 600;
+}
+
+.getstartedbutton:hover::before {
+  transform: scaleX(1);
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #3ccf4e;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 50px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #3ccf4e;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.hoverme {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #3ccf4e;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  border-radius: 50px;
+}
+
+.hoverme span {
+  position: relative;
+  z-index: 2;
+}
+
+.hoverme:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #3ccf4e;
+  transition: all 0.35s;
+  border-radius: 50px;
+}
+
+.hoverme:hover {
+  color: #fff;
+}
+
+.hoverme:hover:after {
+  width: 100%;
+}
+.password-animation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dots {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+}
